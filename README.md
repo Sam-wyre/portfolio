@@ -1,27 +1,37 @@
-# README.md
 
-## Samuel Agbanagba — Portfolio
+# Samuel Agbanagba — Portfolio (Multi‑page)
 
-This repository contains the source code for my personal portfolio website, hosted at [samsiri.xyz](https://samsiri.xyz). The site showcases my skills, experience, and selected projects in cybersecurity, AI, and machine learning.
+Dark, professional, and responsive portfolio with separate tracks for **Cybersecurity** and **AI/ML**, plus pages for Blog, Events, Reading List, Certifications, Education, and Contact.
 
-### Features
-- **Responsive design** — optimized for desktop and mobile.
-- **Dark mode aesthetic** — professional and stylish.
-- **Featured projects** — Applied AI Traffic Management, Emergency Vehicle Classification, Cybersecurity Compliance, and Cloud Security Automation.
-- **Smooth scrolling & animations** — subtle effects for an engaging user experience.
+## Structure
+```
+.
+├── index.html
+├── ai.html
+├── cybersecurity.html
+├── events.html
+├── reading-list.html
+├── certifications.html
+├── education.html
+├── contact.html
+├── blog/
+│   ├── index.html
+│   └── posts/
+│       └── first-post.html
+└── assets/
+    ├── css/styles.css
+    ├── js/main.js
+    └── img/
+```
 
-### Technologies Used
-- **HTML5**
-- **CSS3** (custom styling)
-- **JavaScript** (for animations and smooth navigation)
+## Usage
+- Edit each page content directly in HTML.
+- Blog posts live in `blog/posts/` — copy `first-post.html` to start a new post.
+- Deploy via GitHub Pages by pushing this folder to your `sam-wyre.github.io` repo.
 
-### Live Demo
-[https://samsiri.xyz](https://samsiri.xyz)
+## Custom Domain
+- Add a `CNAME` file in the repo root containing `samsiri.xyz`.
+- Set GoDaddy DNS to GitHub Pages A records, and `www` CNAME to `sam-wyre.github.io`.
 
-### License
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-### Contact
-- **Email:** agbanagba.samuel@gmail.com
-- **LinkedIn:** [linkedin.com/in/samuel-agbanagba](https://www.linkedin.com/in/samuel-agbanagba)
-- **GitHub:** [github.com/Sam-wyre](https://github.com/Sam-wyre)
+## License
+MIT (optional — add `LICENSE` to repo).
