@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home — Samuel Agbanagba</title>
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <meta name="description" content="Home — Portfolio of Samuel Agbanagba" />
 </head>
@@ -21,27 +21,17 @@
     </div>
     <nav class="site-nav">
       <a data-link href="index.html">Home</a>
-      <a data-link href="cybersecurity.html">Cybersecurity</a>
-      <a data-link href="ai.html">Artificial Intelligence</a>
       <a data-link href="blog/index.html">Blog</a>
       <a data-link href="events.html">Events</a>
       <a data-link href="reading-list.html">Reading List</a>
-      <a data-link href="certifications.html">Certifications</a>
-      <a data-link href="education.html">Education</a>
-      <a data-link href="contact.html">Contact</a>
     </nav>
     <button class="menu-toggle">Menu</button>
   </div>
   <div class="container mobile-nav">
     <a data-link href="index.html">Home</a>
-    <a data-link href="cybersecurity.html">Cybersecurity</a>
-    <a data-link href="ai.html">Artificial Intelligence</a>
     <a data-link href="blog/index.html">Blog</a>
     <a data-link href="events.html">Events</a>
     <a data-link href="reading-list.html">Reading List</a>
-    <a data-link href="certifications.html">Certifications</a>
-    <a data-link href="education.html">Education</a>
-    <a data-link href="contact.html">Contact</a>
   </div>
 </header>
 
@@ -53,25 +43,66 @@
   <div class="section">
     <a class="btn" href="cybersecurity.html">Explore Cybersecurity</a>
     <a class="btn" href="ai.html" style="margin-left:8px">Explore AI/ML</a>
-    <a class="btn" href="contact.html" style="margin-left:8px">Contact</a>
   </div>
 </section>
 
-<section class="section grid two">
+<nav class="section card" aria-label="Section navigation">
+  <strong>Jump to:</strong>
+  <a class="btn" href="#experience">Experience</a>
+  <a class="btn" href="#projects">Projects</a>
+  <a class="btn" href="#certifications">Certifications</a>
+  <a class="btn" href="#education">Education</a>
+  <a class="btn" href="#contact">Contact</a>
+</nav>
+
+<section class="section grid two" id="experience">
   <div class="card">
-    <h3>Featured: Applied AI Traffic Management</h3>
-    <p class="lead">Smart‑city prototype integrating sensors and dashboards with AI modules.</p>
-    <div class="tags">
-      <span class="tag">Python</span><span class="tag">Computer Vision</span><span class="tag">APIs</span>
-    </div>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>4way Consulting — Cyber Security Consultant</strong> (Apr 2024 — Present)<br/>NIS/CAF assessments, ISO 27001 policy suite, vulnerability testing.</li>
+      <li><strong>Infoprive — InfoSec Consultant / Analyst</strong> (2020 — 2022)<br/>SIEM monitoring, AWS IAM hardening, security awareness training.</li>
+    </ul>
   </div>
+  <div class="card" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Applied AI Traffic Management</strong> — Smart sensors + dashboard integrations. <a href="ai.html">See AI</a></li>
+      <li><strong>Emergency Vehicle Classification</strong> — Transfer learning CNN. <a href="ai.html">See AI</a></li>
+      <li><strong>Cybersecurity Compliance (ISO 27001 & NIS)</strong> — Policy & remediation. <a href="cybersecurity.html">See Cyber</a></li>
+      <li><strong>Cloud Security Automation</strong> — IAM + SIEM. <a href="cybersecurity.html">See Cyber</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section grid two" id="certifications">
   <div class="card">
-    <h3>Featured: Cybersecurity Compliance (ISO 27001 & NIS)</h3>
-    <p class="lead">Policy development, CAF assessments, and remediation planning for transport clients.</p>
-    <div class="tags">
-      <span class="tag">Governance</span><span class="tag">Risk</span><span class="tag">Policy</span>
-    </div>
+    <h2>Certifications</h2>
+    <ul>
+      <li>Example Cert — Issuer · Year</li>
+      <li>Example Cert — Issuer · Year</li>
+    </ul>
   </div>
+  <div class="card" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MSc, Artificial Intelligence & Data Science</strong> — University of Hull</li>
+      <li><strong>BSc, Computer Science</strong> — Caleb University</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section card" id="contact">
+  <h2>Contact</h2>
+  <p class="lead">Prefer email? <a href="mailto:agbanagba.samuel@gmail.com">agbanagba.samuel@gmail.com</a></p>
+  <form action="mailto:agbanagba.samuel@gmail.com" method="post" enctype="text/plain">
+    <div class="grid two">
+      <label> Name<br><input required name="name" type="text" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:inherit"></label>
+      <label> Email<br><input required name="email" type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:inherit"></label>
+    </div>
+    <label> Message<br><textarea required name="message" rows="6" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:inherit"></textarea></label>
+    <div class="section"><button class="btn" type="submit">Send</button></div>
+  </form>
+  <p class="lead" style="margin-top:10px">Tip: for a production form, we can switch to Formspree or a lightweight serverless function.</p>
 </section>
 
   </main>
