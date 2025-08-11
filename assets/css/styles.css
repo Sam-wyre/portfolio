@@ -1,9 +1,7 @@
 
 :root{
   --bg:#0b0f13; --bg-alt:#0e141b; --card:#0f1720; --muted:#9aa4b2; --text:#e6eef3;
-  --accent:#6ee7b7; /* default accent */
-  --accent-cyber:#48d1c5;
-  --accent-ai:#b48ef7;
+  --accent:#6ee7b7; --accent-cyber:#48d1c5; --accent-ai:#b48ef7;
   --radius:16px; --maxw:1100px; --ff:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';
 }
 *{box-sizing:border-box}
@@ -34,14 +32,21 @@ footer.site-footer{margin:40px 0 60px;color:var(--muted);text-align:center}
 .tags{display:flex;gap:8px;flex-wrap:wrap}
 .tag{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
 .section{margin:26px 0}
-/* accent helpers */
-.accent-cyber{--accent: var(--accent-cyber)}
-.accent-ai{--accent: var(--accent-ai)}
-/* fade in */
 .fade-in{opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.2,.9,.25,1)}
 .in-view{opacity:1;transform:none}
-/* post styles */
-.post header{margin-bottom:12px}
-.post .meta{color:var(--muted);font-size:14px}
-.posts-list article{padding:18px;border:1px solid rgba(255,255,255,0.05);border-radius:14px;background:rgba(255,255,255,0.02)}
+.accent-cyber{--accent: var(--accent-cyber)}
+.accent-ai{--accent: var(--accent-ai)}
 kbd{background:#111a22;border:1px solid rgba(255,255,255,0.08);border-bottom-width:2px;padding:2px 6px;border-radius:6px;font-size:12px}
+
+/* clickable cards */
+a.link-card{display:block;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05);
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:22px; text-decoration:none; color:inherit; box-shadow:0 6px 24px rgba(2,6,23,0.35);
+  transition:transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+a.link-card:hover{transform:translateY(-2px); border-color: rgba(255,255,255,0.12);
+  background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  box-shadow:0 10px 34px rgba(2,6,23,0.55);
+}
+a.link-card .eyebrow{color:var(--muted);font-size:13px;margin-bottom:6px;letter-spacing:.02em}
+a.link-card h3{margin:0 0 6px}
